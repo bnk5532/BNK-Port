@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: black;
-    border-bottom: 2px rgb(238, 247, 247) solid;
+    border-bottom: 1px rgb(238, 247, 247) solid;
 }
 
 header h1 {
@@ -47,27 +47,38 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: rgba(246, 162, 18, 0.865);
-    color: white;
+    background: rgba(246, 185, 127, 0.962);
+    color: black;
     border-radius: 10px;
     text-shadow: none;
 }
 
-footer {
-    background-color: black;
-    padding: 10px;
-    
-}
-
 aside {
-    width: 25%;
     background-color: rgba(246, 185, 127, 0.962);
     padding: 20px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
+
+aside h3 {
+    padding: 20px;
+}
+
+
 main {
     display: flex;
-    position: relative;
-    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 300px;
+    border-bottom: 1px rgb(238, 247, 247) solid;
+}
+
+footer {
+    background-color: black;
+    padding: 10px;   
 }
 
 .hero {
@@ -77,13 +88,14 @@ main {
     background-image: url("../images/WB nightlife.jpeg");
     background-size: cover;
     background-position: 60%;
+    border-bottom: 1px rgb(238, 247, 247) solid;
 }
 
-.hero-text h2 {
+h2 {
     color: white;
     font-style: italic;
     font-size: 14px;
-    position: flex;        
+    width: 25%;  
 }
 
 .projects {
@@ -95,8 +107,8 @@ main {
 .large-card img {
     width: 100%;
     border-radius: 15px;
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     border: 3px solid rgba(226, 136, 40, 0.669);  
 }
 .card img {
@@ -117,7 +129,7 @@ main {
     transition: all 1s ease;
 }
 .brighten img:hover {
-    -webkit-filter: brightness(130%);
+    -webkit-filter: brightness(135%);
     }
 
 address, #contact-me {
