@@ -12,12 +12,13 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
   
-header, footer {
+header {
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: black;
+    border-bottom: 2px rgb(238, 247, 247) solid;
 }
 
 header h1 {
@@ -45,18 +46,29 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
-  
-aside {
-  flex: 1;
-  background-color: rgb(121, 74, 204);
-  padding: 80px;
-  text-align: center;
+header nav ul li a:hover {
+    background: rgba(246, 162, 18, 0.865);
+    color: white;
+    border-radius: 10px;
+    text-shadow: none;
 }
 
+footer {
+    background-color: black;
+    padding: 10px;
+    
+}
+
+aside {
+    width: 25%;
+    background-color: rgba(246, 185, 127, 0.962);
+    padding: 20px;
+}
+main {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
 
 .hero {
     padding: 120px 135px;
@@ -71,38 +83,46 @@ aside {
     color: white;
     font-style: italic;
     font-size: 14px;
-    float: right;
+    position: flex;        
 }
 
 .projects {
-    flex: 4;
+    flex: 20%;
     background-color: rgb(238, 247, 247);
-    padding: 10px;
-    /* display: inline-block; */
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 5px;
 }
   
-/* .card {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
-} */
-/* .card header {
-    padding: 5px;
-} */
- 
+.large-card img {
+    width: 100%;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+    border: 3px solid rgba(226, 136, 40, 0.669);  
+}
 .card img {
     width: 100%;
     border-radius: 15px;
-    width: 400px;
-    height: 220px;
+    width: 225px;
+    height: 120px;
     border: 3px solid rgba(226, 136, 40, 0.669);  
 }
 
-address {
+.brighten img {
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.brighten img:hover {
+    -webkit-filter: brightness(130%);
+    }
+
+address, #contact-me {
     color: white;
     font-size: 12px;
+    display: flex;
+    justify-content: space-between;
 }
