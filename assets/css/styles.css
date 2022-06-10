@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,10 +8,11 @@
   
 body {
     color:black;
+    background-color: rgb(238, 247, 247);
     font-family: Helvetica, Arial, sans-serif;
 }
   
-header {
+header, footer {
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
@@ -42,25 +45,64 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+aside {
+  flex: 1;
+  background-color: rgb(121, 74, 204);
+  padding: 80px;
+  text-align: center;
+}
+
+
 .hero {
     padding: 120px 135px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     background-image: url("../images/WB nightlife.jpeg");
     background-size: cover;
-    background-position: 80%;
-    display: flex;
+    background-position: 60%;
 }
 
-  .hero h2 {
+.hero-text h2 {
     color: white;
     font-style: italic;
-    font-size: 15px;
-    flex: wrap;
-    justify-content: right;
-  }
+    font-size: 14px;
+    float: right;
+}
 
-.contact-me {
-    
+.projects {
+    flex: 4;
+    background-color: rgb(238, 247, 247);
+    padding: 10px;
+    /* display: inline-block; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+/* .card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+} */
+/* .card header {
+    padding: 5px;
+} */
+ 
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    width: 400px;
+    height: 220px;
+    border: 3px solid rgba(226, 136, 40, 0.669);  
+}
+
+address {
+    color: white;
+    font-size: 12px;
 }
