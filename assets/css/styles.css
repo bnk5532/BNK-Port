@@ -18,11 +18,13 @@ header {
     background-color: black;
     border-bottom: 1px rgb(238, 247, 247) solid;
     z-index: 9999;
+    
+
 }
 
 header h1 {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 header a {
@@ -53,12 +55,20 @@ header nav ul li a:hover {
 }
 
 h3 {
-    margin: 20px;
+    margin: 25px;
 }
 
-.sidebar {
+/* .sidebar {
     background-color: rgba(246, 185, 127, 0.962);
-    width: 50%;
+    width: 25%;
+    border-right: 8px solid rgba(230, 138, 40, 0.45);
+} */
+
+.content{
+    width:70%;
+    height: 100%;
+    padding: 15px 20px 0 20px;
+    font-size: 18px;
 }
 
 article {
@@ -72,10 +82,6 @@ main {
     border-bottom: 1px rgb(238, 247, 247) solid;
 }
 
-footer {
-    background-color: black;
-    padding: 10px;  
-}
 
 .hero {
     padding: 120px 135px;
@@ -109,28 +115,27 @@ h4{
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(238, 247, 247);
-    padding: 5px;
     justify-content: center;
 
 }
 .large-card {
     position: relative;
     display: flex;
-    justify-content: left;
-    padding: 10px;
+    justify-content: center;
+    padding-top: 15px;
 }
 
 .large-card-img {
     border-radius: 15px;
-    width: 100%;
-    height: 40vh;
-    border: 3px solid rgba(226, 136, 40, 0.669);
+    width: 80%;
+    height: 36vh;
+    border: 5px solid rgba(226, 136, 40, 0.669);
 }
 
 .app-names {
     position:absolute;
-    bottom: 35px;
-    left: 30px;
+    bottom: 20px;
+    left: 110px;
     color: white;
 }
 
@@ -146,7 +151,7 @@ h4{
     border-radius: 15px;
     width: 250px;
     height: 150px;
-    border: 3px solid rgba(226, 136, 40, 0.669);
+    border: 4px solid rgba(226, 136, 40, 0.669);
     margin: 0 2px;
 }
 
@@ -156,16 +161,13 @@ h4{
     left: 22px;
     color: white;
 }
-
-/* .app-names2 {
-    position:absolute;
-    bottom: 25px;
-    left: 25px;
-    color: white;
-} */
+a{
+    text-decoration: none;
+    color: inherit
+}
 
 .brighten img {
-    -webkit-filter: brightness(100%);
+    -webkit-filter: brightness(97%);
     -webkit-transition: all 1s ease;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -184,4 +186,44 @@ address,
     font-size: 12px;
     display: flex;
     justify-content: space-evenly;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    height: 45px;
+}
+
+#contact-me{
+    width: 20%;
+    line-height: 45px;
+    color: white;
+    font-size: 1.75vw;
+}
+
+#contact{
+    display:flex;
+    flex-direction: row;
+    color:white;
+    font-size: 1.45vw;
+    width:75%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    flex-wrap: wrap;
+}
+
+#About-Me {
+    display:flex;
+    flex-direction: column;
+    color:black;
+    background-color: rgba(246, 185, 127, 0.962);
+    font-size: 1.75vw;
+    width:20%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; 
+    padding-top: 20px;
 }
