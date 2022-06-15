@@ -8,7 +8,7 @@ A website that showcases my skills in HTML and CSS.
 * CSS
 
 ## Website
-https://bnk5532.github.io/css-based-portfolio
+https://bnk5532.github.io/CSS-Based-Portfolio/
 
 ## Contribution
 Made with ❤️ by Brian King
