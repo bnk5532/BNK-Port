@@ -56,12 +56,6 @@ h3 {
     margin: 25px;
 }
 
-/* .sidebar {
-    background-color: rgba(246, 185, 127, 0.962);
-    width: 25%;
-    border-right: 8px solid rgba(230, 138, 40, 0.45);
-} */
-
 .content{
     width:70%;
     height: 100%;
@@ -79,7 +73,6 @@ main {
     flex-direction: row;
     border-bottom: 1px rgb(238, 247, 247) solid;
 }
-
 
 .hero {
     padding: 120px 135px;
@@ -103,7 +96,7 @@ h2 {
     padding: 15px;
 }
 
-h4{
+h4 {
     border:2px solid rgba(246, 185, 127, 0.962);
     border-radius: 4px;
     font-size: 1.55vw;    
@@ -116,6 +109,7 @@ h4{
     justify-content: center;
 
 }
+
 .large-card {
     position: relative;
     display: flex;
@@ -159,6 +153,7 @@ h4{
     left: 22px;
     color: white;
 }
+
 a{
     text-decoration: none;
     color: inherit
