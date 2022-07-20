@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 239, 239);
+    font-family: helvetica, arial, sans-serif;
+    
+}
+
+.jumbotron {
+    position:relative;
+    min-height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("https://i.insider.com/533f0c24ecad04d06d2dbf25?width=1000&format=jpeg&auto=webpmages/WB nightlife.jpeg");
+    background-size: cover;
+    background-position: 100%;
+    margin-bottom: 5px;
+    border-bottom: solid black 1px;
+
+}
+
+.jumbotron>h1 {
+    position: absolute;
+    top: 8%;
+    right: 4%;
+    margin: 0;
+    font-size: 3.5rem;
+    
+}
+ 
+footer {
+background-position: bottom;
+position: relative;
+padding-top: 10px;
+flex-wrap: wrap;
+/* float: inline-end; */
+text-align: center;
+font-size: 1.5rem;
+height: 75px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.cards {
+    border: solid rgb(115, 114, 114) 1px;
+    border-radius: 2px;
+    margin: 12px;
+    height: auto;
+    padding: 10px;
+    box-shadow: 7px 5px 5px #64B5F6;
+    
+}
+
+h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}
+
