@@ -159,7 +159,14 @@ h4 {
     margin: 0 2px;
 }
 
-.app-names1, .app-names2, .app-names3, .app-names4 {
+.app-names1 {
+    position:absolute;
+    bottom: 20px;
+    left: 22px;
+    color: rgba(53, 50, 50, 0.956);
+}
+
+.app-names2, .app-names3, .app-names4 {
     position:absolute;
     bottom: 20px;
     left: 22px;
